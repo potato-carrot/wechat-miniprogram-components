@@ -1,0 +1,15 @@
+<!-- components/carrot-table.wxml -->
+<view class="component-carrot-table">
+    <view class="thead-wrap">
+        <view wx:for="{{columns}}" wx:for-index="idx" wx:for-item="item" style="width:{{item.width ? item.width+'rpx':'auto'}}">
+            {{item.title}}
+        </view>
+    </view>
+    <view class="tbody-wrap">
+        <view class="row" wx:for="{{tbodyData}}" wx:for-item="rowData">
+            <view wx:for="{{rowData}}" wx:for-item="cellData" style="width:{{cellData.props.width ? cellData.props.width+'rpx':'auto'}}">
+                {{cellData.data}}
+            </view>
+        </view>
+    </view>
+</view>

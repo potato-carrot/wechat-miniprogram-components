@@ -1,0 +1,17 @@
+.component-carrot-table {
+  color: red;
+}
+.component-carrot-table .thead-wrap {
+  background: grey;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.component-carrot-table .tbody-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.component-carrot-table .tbody-wrap .row {
+  display: flex;
+  text-align: center;
+}

@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <carrot-table dataSource="{{dataSource}}" columns="{{columns}}"></carrot-table>
+</view>
